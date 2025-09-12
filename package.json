@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "homepage": "https://github.com/marcosprofile/natours#readme",
+  "bugs": {
+    "url": "https://github.com/marcosprofile/natours/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosprofile/natours.git"
+  },
+  "license": "ISC",
+  "author": "Marcos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}

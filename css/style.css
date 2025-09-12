@@ -28,15 +28,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-.header .header__logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header .header__logo-box .header__logo {
+.header__logo-box .header__logo {
   height: 3.6rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -44,20 +43,21 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.header__text-box .heading-primary {
+
+.heading-primary {
   color: #FFF;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
-.header__text-box .heading-primary .heading-primary--main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease;
 }
-.header__text-box .heading-primary .heading-primary--sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -65,8 +65,7 @@ body {
   animation: moveInRight 1s ease;
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -76,23 +75,19 @@ body {
   position: relative;
   font-size: 1.6rem;
 }
-.btn:link:hover,
-.btn:visited:hover {
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.btn:link:hover:hover::after,
-.btn:visited:hover:hover::after {
+.btn:hover:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:link:active,
-.btn:visited:active {
+.btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.btn:link::after,
-.btn:visited::after {
+.btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -104,17 +99,14 @@ body {
   z-index: -1;
   transition: all 0.4s ease;
 }
-.btn:link.btn--white,
-.btn:visited.btn--white {
+.btn--white {
   background-color: #FFF;
   color: #777;
 }
-.btn:link.btn--white::after,
-.btn:visited.btn--white::after {
+.btn--white::after {
   background-color: #FFF;
 }
-.btn:link.btn--animated,
-.btn:visited.btn--animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease 0.75s;
   animation-fill-mode: backwards;
 }

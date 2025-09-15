@@ -13,8 +13,11 @@
 @use "./components/card";
 @use "./components/story";
 @use "./components/bg-video";
+@use "./components/form";
 
+@use "./components/layout/navigation";
 @use "./components/layout/header";
 @use "./components/layout/grid";
+@use "./components/layout/footer";
 
 @use "./components/pages/home";
